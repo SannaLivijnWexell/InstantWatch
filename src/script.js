@@ -102,7 +102,7 @@ class CreateParticles {
 			particleSize: 1,
 			particleColor: 0xffffff,
 			textSize: 20,
-			area: 1000,
+			area: 800,
 			ease: .04,
 		}
 
@@ -217,7 +217,7 @@ class CreateParticles {
 
 		    		if ((px > (initX + 70)) || ( px < (initX - 70)) || (py > (initY + 70) || ( py < (initY - 70)))){
 
-		    			this.colorChange.setHSL( .15, 1.0 , .5 )
+		    			this.colorChange.setHSL( .9, 1.0 , .5 )
 		    			coulors.setXYZ( i, this.colorChange.r, this.colorChange.g, this.colorChange.b )
 		    			coulors.needsUpdate = true;
 
@@ -233,7 +233,7 @@ class CreateParticles {
 			    			px -= .03 * Math.cos( t );
 			    			py -= .03 * Math.sin( t );
 
-			    			this.colorChange.setHSL( .15 , 1.0 , .5 )
+			    			this.colorChange.setHSL( .5 , 1.0 , .5 )
 			    			coulors.setXYZ( i, this.colorChange.r, this.colorChange.g, this.colorChange.b )
 			    			coulors.needsUpdate = true;
 
@@ -249,13 +249,13 @@ class CreateParticles {
 					    	pos.setXYZ( i, px, py, pz );
 					    	pos.needsUpdate = true;
 
-					    	size.array[ i ]  = this.data.particleSize * 1.3 ;
+					    	size.array[ i ]  = this.data.particleSize * 1.5 ;
 					    	size.needsUpdate = true;
 				    	}
 
 			    		if ((px > (initX + 10)) || ( px < (initX - 10)) || (py > (initY + 10) || ( py < (initY - 10)))){
 
-			    			this.colorChange.setHSL( .15, 1.0 , .5 )
+			    			this.colorChange.setHSL( .5, 1.0 , .5 )
 			    			coulors.setXYZ( i, this.colorChange.r, this.colorChange.g, this.colorChange.b )
 			    			coulors.needsUpdate = true;
 
